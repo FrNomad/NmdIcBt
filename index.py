@@ -1,8 +1,8 @@
 import discord
 import asyncio
 import random
+import os
 
-token="ODEwNDgyNDQ1ODExODQzMDcy.YCkSmQ.dXEUJBKJDJnfagzqGS6eZ9oOjJw"
 hochul="얼음아"
 client = discord.Client()
 embedcolor = 0x2121E5
@@ -125,5 +125,5 @@ async def on_message(message):
                 if msg in message.author.name:
                     await message.channel.send(f"{mt}, 당신입니다")
         
-
-client.run(token)
+access.token = os.environ['BOT_TOKEN']
+client.run(access_token)
