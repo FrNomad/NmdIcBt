@@ -124,5 +124,5 @@ async def on_message(message):
                 if msg in message.author.name:
                     await message.channel.send(f"{mt}, 당신입니다")
         
-access.token = os.environ['BOT_TOKEN']
+access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
